@@ -16,6 +16,7 @@
 			<li>Changer background-color</li>
 			<li>Changer titre</li>
 			<li>Changer paragraphe</li>
+			<li>Choisir police</li>
 			<li>Choisir persistance fenêtre</li>
 		</ul>
 		<p>Options</p>
@@ -24,17 +25,25 @@
 			<li>Changer position popupl</li>
 			<li>Mettre image de fond</li>
 		</ul>
-		<div>
-			<button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'}">
-				Choose background color
-			</button>
-			<span id="bgcolor">Background-color:</span> <input id="chosen-value" value="000000">
-		</div>
-		<div>
-			<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
-				Choose text color
-			</button>
-			<span id="bgcolor">Text-color:</span> <input id="chosen-value" value="000000">
+		<div id="config-popup">
+			<div>
+				<button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'}">
+					Choose background color
+				</button>
+				<span id="bgcolor">Background-color:</span> <input id="chosen-value" value="000000">
+			</div>
+			<div>
+				<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTitleColor(this)'}">
+					Choose text color
+				</button>
+				<span id="bgcolor">Title-color:</span> <input id="chosen-value" value="000000">
+			</div>
+			<div>
+				<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+					Choose text color
+				</button>
+				<span id="bgcolor">Text-color:</span> <input id="chosen-value" value="000000">
+			</div>
 		</div>
 	</div>
 
@@ -55,8 +64,11 @@
 			document.getElementById('bgcolor').style.color = '#' + picker.toString()
 			document.getElementById('popup').style.backgroundColor = '#' + picker.toString()
 		}
-		function setTextColor(picker) {
+		function setTitleColor(picker) {
 			document.getElementById('pop-title').style.color = '#' + picker.toString()
+		}
+		function setTextColor(picker) {
+			document.getElementById('pop-content').style.color = '#' + picker.toString()
 		}
 	</script>
 	<script type="text/javascript" src="assets/js/popup.js"></script>
