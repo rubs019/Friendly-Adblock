@@ -16,7 +16,7 @@
 			<li>Changer background-color</li>
 			<li>Changer titre</li>
 			<li>Changer paragraphe</li>
-			<li></li>
+			<li>Choisir persistance fenêtre</li>
 		</ul>
 		<p>Options</p>
 		<ul>
@@ -24,13 +24,25 @@
 			<li>Changer position popupl</li>
 			<li>Mettre image de fond</li>
 		</ul>
+		<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+		Choose text color
+	</button>
+
+	<span id="bgcolor">Background-color:</span> <input id="chosen-value" value="000000">
 	</div>
+
 	<div id="popup">
 		<div id="pop-title"><span>Adblock detected</span></div>
 		<i id="pop-close" class="material-icons">close</i>
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jscolor.min.js"></script>
+	<script>
+		function setTextColor(picker) {
+			document.getElementById('bgcolor').style.color = '#' + picker.toString()
+		}
+	</script>
 	<script type="text/javascript" src="assets/js/popup.js"></script>
 </body>
 </html>
