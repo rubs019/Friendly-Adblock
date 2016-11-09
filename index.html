@@ -24,11 +24,18 @@
 			<li>Changer position popupl</li>
 			<li>Mettre image de fond</li>
 		</ul>
-		<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
-		Choose text color
-	</button>
-
-	<span id="bgcolor">Background-color:</span> <input id="chosen-value" value="000000">
+		<div>
+			<button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'}">
+				Choose background color
+			</button>
+			<span id="bgcolor">Background-color:</span> <input id="chosen-value" value="000000">
+		</div>
+		<div>
+			<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+				Choose text color
+			</button>
+			<span id="bgcolor">Text-color:</span> <input id="chosen-value" value="000000">
+		</div>
 	</div>
 
 	<div id="popup">
@@ -39,9 +46,12 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/jscolor.min.js"></script>
 	<script>
-		function setTextColor(picker) {
+		function setBgColor(picker) {
 			document.getElementById('bgcolor').style.color = '#' + picker.toString()
 			document.getElementById('popup').style.backgroundColor = '#' + picker.toString()
+		}
+		function setTextColor(picker) {
+			document.getElementById('pop-title').style.color = '#' + picker.toString()
 		}
 	</script>
 	<script type="text/javascript" src="assets/js/popup.js"></script>

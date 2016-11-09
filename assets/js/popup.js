@@ -1,4 +1,4 @@
-if( window.isAdblock === undefined ){
+if( window.isAdblock !== undefined ){
 	$('#popup').animate({bottom: '0px'}, 1000);
 
 	$('#pop-close').click(function(){
