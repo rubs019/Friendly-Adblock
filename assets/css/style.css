@@ -1,0 +1,20 @@
+#popup {
+	width: 250px;
+	height: 300px;
+	position: fixed;
+	bottom: -300px;
+	right: 25px;
+	background-color: orange;
+	border-radius: 3px;
+	padding: 10px 10px 0px 10px;
+}
+#popup #pop-title {
+	margin: 0px;
+	text-align: center;
+} 
+#popup #pop-close {
+	float: right;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}

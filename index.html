@@ -1,1 +1,23 @@
-<h1>Hello word</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vous me fatiguez</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<script type="text/javascript" src="assets/js/ads.js"></script>
+</head>
+<body>
+	<div id="popup">
+		<div id="pop-title"><span>Adblock detected</span></div>
+		<i id="pop-close" class="material-icons">close</i>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/popup.js"></script>
+	<script type="text/javascript">
+		if( window.isAdblock === undefined ){console.log('noAds')}
+	</script>
+</body>
+</html>
