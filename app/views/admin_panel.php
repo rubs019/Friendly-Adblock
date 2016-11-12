@@ -2,7 +2,7 @@
 	<h1><?= MYPLUGIN_PLUGIN_NAME ?></h1>
 	<div id="wpbody-content">
 		<div id="body-content">
-			<form action="<?= esc_url(plugins_url('first_plugin_wordpress/app/controller/test.php')); ?> " method="post" id="config-popup">
+			<form action="<?= esc_url(plugins_url('first_plugin_wordpress/app/test_form.php')); ?> " method="post" id="config-popup">
 				<div>
 					<button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'} button button-small">
 						Choose background color

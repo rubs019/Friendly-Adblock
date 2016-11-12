@@ -1,5 +1,5 @@
 #popup {
-	width: 250px;
+	width: 450px;
 	height: 300px;
 	position: fixed;
 	bottom: -350px;
@@ -8,11 +8,12 @@
 	background-color: orange;
 	border-radius: 3px;
 	padding: 10px 10px 0px 10px;
-	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 20px;
 }
 #popup #pop-title {
 	margin: 0px;
 	text-align: center;
+	font-size: 2.5em;
 } 
 #popup #pop-close {
 	float: right;

@@ -8,6 +8,7 @@ License: GPLv2 or later
 Text Domain: Friendly Adblock
 */
 
+
 add_action('admin_menu', 'add_Module_Panel_Admin');
 add_action('admin_enqueue_scripts', 'script_load');
 
