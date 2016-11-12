@@ -11,6 +11,10 @@ Text Domain: Friendly Adblock
 add_action('admin_menu', 'add_Module_Panel_Admin');
 add_action('admin_enqueue_scripts', 'script_load');
 
+if (!defined('MYPLUGIN_PLUGIN_NAME')){
+	define('MYPLUGIN_PLUGIN_NAME', trim('Friendly Adblock'), '/');
+}
+
 function script_load($hook) {
 	// Activation css/js sur page tableau-bord
 	if ($hook != 'first_plugin_wordpress/app/admin_panel.php') {return;}

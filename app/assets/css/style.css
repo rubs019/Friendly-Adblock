@@ -23,3 +23,6 @@
 #body-content {
 	width:77%;
 }
+#body-content #publish {
+	float: right;
+}
