@@ -6,7 +6,7 @@
  * Time: 14:08
  */
 
-function get_result($prefix, $isCreate){
+function get_result($wpdb, $prefix, $isCreate){
 	global $wpdb;
 
 	// If the data table is created
@@ -18,6 +18,6 @@ function get_result($prefix, $isCreate){
 		return $results;
 	} else {
 		echo "ERROR : Error select DB, please try to reactive your plugins [Issue 001]";
-		return;
+		return false;
 	}
 }

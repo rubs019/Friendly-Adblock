@@ -2,24 +2,24 @@
 	<h1><?= MYPLUGIN_PLUGIN_NAME ?></h1>
 	<div id="wpbody-content">
 		<div id="body-content">
-			<form action="<?= esc_url(plugins_url('first_plugin_wordpress/app/test_form.php')); ?> " method="post" id="config-popup">
-				<div>
+			<form action="<?= plugins_url() ?>/first_plugin_wordpress/app/controller/test_form.php" method="post" id="config-popup">
+				<div class="choose-options">
 					<button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'} button button-small">
 						Choose background color
 					</button>
-					<span id="bgcolor">Background-color:</span> <input name="bgcolor" id="chosen-value" value="<?= $request->fa_bgcolor ?>">
+					<span class="choose-color" id="bgcolor">Background-color:</span> <input name="bgcolor" id="chosen-value" value="<?= $request->fa_bgcolor ?>">
 				</div>
-				<div>
+				<div class="choose-options">
 					<button class="jscolor {valueElement:'chosen-value1', onFineChange:'setTitleColor(this)'} button button-small">
 						Choose text color
 					</button>
-					<span id="bgcolor">Title-color:</span> <input name="titlecolor" id="chosen-value1" value="<?= $request->fa_color_title ?>"">
+					<span class="choose-color" id="titlecolor">Title-color:</span> <input name="titlecolor" id="chosen-value1" value="<?= $request->fa_color_title ?>"">
 				</div>
-				<div>
+				<div class="choose-options">
 					<button class="jscolor {valueElement:'chosen-value2', onFineChange:'setTextColor(this)'} button button-small">
 						Choose text color
 					</button>
-					<span id="bgcolor">Text-color:</span> <input name="contentcolor" id="chosen-value2" value="<?= $request->fa_color_content ?>">
+					<span class="choose-color" id="contentcolor">Text-color:</span> <input name="contentcolor" id="chosen-value2" value="<?= $request->fa_color_content ?>">
 				</div>
 
 				<div id="titlediv">
@@ -41,23 +41,6 @@
 						<div class="uploader-editor-content">
 							<div class="uploader-editor-title">Drop files to upload</div>
 						</div>
-					</div>
-					<div id="rules">
-						<p>L'utilisateur pourra : </p>
-						<p>Priorité</p>
-						<ul>
-							<li>Changer background-color</li>
-							<li>Changer titre</li>
-							<li>Changer paragraphe</li>
-							<li>Choisir police</li>
-							<li>Choisir persistance fenêtre</li>
-						</ul>
-						<p>Options</p>
-						<ul>
-							<li>Changer forme popup</li>
-							<li>Changer position popupl</li>
-							<li>Mettre image de fond</li>
-						</ul>
 					</div>
 				</div>
 			</form>

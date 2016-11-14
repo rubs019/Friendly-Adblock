@@ -6,16 +6,20 @@
  * Time: 14:14
  */
 
-function update_table(){
-	global $wpdb;
+function update_table($wpdb, $param) {
 
-	$updated = $wpdb -> update('wp_plugins_fa', array( 'fa_title' => 'Rubz'), array( 'fa_id' => 1 ));
 
-	if ( false === $updated ) {
+	$updated = $wpdb->update( 'wp_plugins_fa', array( 'fa_title' => $param['popup_title'],
+	                                                  'fa_content' => $param['content'],
+	                                                  'fa_bgcolor' => $param['bgcolor'],
+	                                                  'fa_color_title' => $param['titlecolor'],
+	                                                  'fa_color_content' => $param['contentcolor'] ), array( 'fa_id' => 1 ), '%s' );
+
+	if (!$updated ) {
 		// There was an error.
-		var_dump('Error');
+		echo 'Error in your SQL request, please contact the administrator';
 	} else {
 		// No error. You can check updated to see how many rows were changed.
-		var_dump('Cool');
+		header('Location: http://local.dev/wordpress/wp-admin/index.php?page=first_plugin_wordpress%2Fapp%2Fadmin_panel.php');
 	}
 }

@@ -5,8 +5,7 @@
  * Date: 12/11/16
  * Time: 14:06
  */
-function db_create($prefix){
-	global $wpdb;
+function db_create($wpdb, $prefix){
 
 	$charset_collate = $wpdb->get_charset_collate();
 

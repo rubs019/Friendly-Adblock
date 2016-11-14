@@ -28,6 +28,7 @@ function script_load($hook) {
 	wp_enqueue_script( 'ads', esc_url( plugins_url( '/app/assets/js/ads.js', __FILE__ ) ));
 	wp_enqueue_script( 'jscolor', esc_url( plugins_url( '/app/assets/js/jscolor.min.js', __FILE__ ) ), array('jquery'), '1.0', true );
 	wp_enqueue_script( 'popup', esc_url( plugins_url( '/app/assets/js/popup.js', __FILE__ ) ), array('jquery'), '1.0', true );
+	wp_enqueue_script( 'fa_script', esc_url( plugins_url( '/app/assets/js/fa_script.js', __FILE__ ) ), array('jquery'), '1.0', true );
 }
 
 function add_Module_Panel_Admin(){

@@ -5,8 +5,7 @@
  * Date: 12/11/16
  * Time: 14:46
  */
-function db_prefix(){
-	global $wpdb;
+function db_prefix($wpdb){
 
 	$table_name = $wpdb->prefix;
 

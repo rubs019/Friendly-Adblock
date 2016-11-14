@@ -27,3 +27,21 @@
 #body-content #publish {
 	float: right;
 }
+#popup #pop-content {
+	padding:30px;
+}
+.wp-core-ui .button-group.button-small .button, .wp-core-ui .button.button-small {
+	width: 150px;
+}
+.choose-color {
+	display: none !important;
+	width: 110px;
+	display: inline-block;
+}
+.choose-options {
+	height: 30px;
+}
+.choose-options input {
+	width: 100px;
+	text-align: center;
+}
