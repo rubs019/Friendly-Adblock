@@ -34,7 +34,8 @@
 						<link rel="stylesheet" id="editor-buttons-css" href="http://local.dev/wordpress/wp-includes/css/editor.min.css?ver=4.6.1" type="text/css" media="all">
 					</div>
 					<div id="wp-content-editor-container" class="wp-editor-container">
-						<textarea class="wp-editor-area" style="height: 300px; margin-top: 37px;" autocomplete="off" cols="40" name="content" id="content"><?= $request->fa_content ?></textarea>
+						<?php wp_editor( $request->fa_content , 'content'); ?>
+						<!-- <textarea class="wp-editor-area" style="height: 300px; margin-top: 37px;" autocomplete="off" cols="40" name="content" id="content"><?= $request->fa_content ?></textarea> -->
 					</div>
 					<input name="save" type="submit" class="button button-primary button-large" id="publish" value="Save">
 					<div class="uploader-editor">
