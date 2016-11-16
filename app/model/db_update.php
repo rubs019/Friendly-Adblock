@@ -8,7 +8,6 @@
 
 function update_table($wpdb, $param) {
 
-
 	$updated = $wpdb->update( 'wp_plugins_fa', array( 'fa_title' => $param['popup_title'],
 	                                                  'fa_content' => $param['content'],
 	                                                  'fa_bgcolor' => $param['bgcolor'],
@@ -19,7 +18,7 @@ function update_table($wpdb, $param) {
 		// There was an error.
 		echo 'Error in your SQL request, please contact the administrator';
 	} else {
-		// No error. You can check updated to see how many rows were changed.
+		// No error.
 		header('Location: http://local.dev/wordpress/wp-admin/index.php?page=first_plugin_wordpress%2Fapp%2Fadmin_panel.php');
 	}
 }
