@@ -1,0 +1,51 @@
+#popup {
+	font-size: 13px;
+	width: 450px;
+	height: 300px;
+	position: fixed;
+	bottom: -350px;
+	right: 25px;
+	z-index: 1001;
+	background-color: orange;
+	border-radius: 3px;
+	padding: 10px 10px 0px 10px;
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 20px;
+	line-height: 1.4em;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#popup #pop-title {
+	margin: 0px;
+	text-align: center;
+	font-size: 2.3em;
+	padding-top: 30px;
+} 
+#popup #pop-close {
+	float: right;
+    position: relative;
+    top: -50px;
+    cursor: pointer;
+}
+#body-content {
+	width:77%;
+}
+#popup #pop-content {
+	padding: 20px 30px 0px 30px;
+}
+.choose-options .button.button-small {
+	width: 200px;
+}
+.choose-color {
+	display: none !important;
+	width: 110px;
+	display: inline-block;
+}
+.choose-options {
+	height: 30px;
+}
+.choose-options input {
+	width: 100px;
+	text-align: center;
+}
+#popup #pop-content p {
+	font-size: 14px;
+}
