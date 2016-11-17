@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: (Disabled) Friendly Adblock
+Plugin Name: Friendly Adblock
 Description: Show personnal and cool advert to users using Adblock :) Enjoy !
-Version: 0.0.1
+Version: 0.1.0
 Author: Rubs019
 License: GPLv2 or later
 Text Domain: Friendly Adblock
@@ -38,7 +38,7 @@ function index_popup() {
 
 function script_load($hook) {
 	// Activation css/js sur page tableau-bord
-	if ($hook === 'first_plugin_wordpress/app/admin_panel.php' or is_front_page()) {
+	if ($hook === plugin_basename( __DIR__ ).'/app/admin_panel.php' or is_front_page()) {
 		// Css
 		wp_enqueue_style( 'style', esc_url( plugins_url( '/app/assets/css/style.css', __FILE__ ) ) );
 		wp_enqueue_style( 'material_icons', esc_url( 'https://fonts.googleapis.com/icon?family=Material+Icons', __FILE__ ) );
@@ -57,7 +57,7 @@ function add_Module_Panel_Admin(){
 	$page_title = 'Friendly Adblock';
 	$menu_title = 'Friendly Adblock';
 	$capability = 'manage_options';
-	$menu_slug = 'first_plugin_wordpress/app/admin_panel.php';
+	$menu_slug = plugin_dir_path( __FILE__ ).'/app/admin_panel.php';
 
 	add_submenu_page($parent_slug, $page_title, $menu_title, $capability, $menu_slug);
 }
