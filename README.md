@@ -1,7 +1,7 @@
 # Friendly-Adblock
 ##Description:
 This plugin allow you to display friendly message to adblocker :)<br>
-Use it for talk to your users, display the good message and they will desactivate thei adblock for sure :p
+Use it for talk to your users, display the good message and they will desactivate their adblock for sure :p
 ##Features
 You can easily : 
 * Change background color
@@ -11,7 +11,7 @@ You can easily :
 * Change text color
 
 ## How to install
-The Friendly-adblock plugins is not available on Wordpress plugins yet.<br>
+The Friendly-adblock plugin is not available on Wordpress plugins yet.<br>
 However you can :
 
 * Download this repository by clicking on "download zip" above (clone or download => download zip)
@@ -22,4 +22,4 @@ However you can :
 
 ### Can I help you ?
 For sure :) <br>
-Just fork and edit the plugins as you want 
+Just fork and edit the plugins like you want 
