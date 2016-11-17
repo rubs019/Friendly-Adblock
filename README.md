@@ -9,6 +9,7 @@ You can easily :
 * Change text color title
 * Change text title
 * Change text color
+
 ## How to install
 The Friendly-adblock plugins is not available on Wordpress plugins yet.<br>
 However you can :
