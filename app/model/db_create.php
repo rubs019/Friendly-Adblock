@@ -9,7 +9,7 @@ function db_create($wpdb, $prefix){
 
 	$charset_collate = $wpdb->get_charset_collate();
 
-	$sql = "CREATE TABLE IF NOT EXISTS ".$prefix."_plugins_fa (
+	$sql = "CREATE TABLE IF NOT EXISTS ".$prefix."plugins_fa (
 	fa_id int(11) NOT NULL AUTO_INCREMENT,
 	fa_title varchar(100) NOT NULL,
 	fa_content varchar(360) NOT NULL,

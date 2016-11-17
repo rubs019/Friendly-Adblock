@@ -8,7 +8,6 @@ License: GPLv2 or later
 Text Domain: Friendly Adblock
 */
 
-
 add_action('admin_menu', 'add_Module_Panel_Admin');
 add_action('admin_enqueue_scripts', 'script_load');
 add_action( 'wp_enqueue_scripts', 'script_load' );
@@ -17,6 +16,7 @@ add_action( 'wp_footer', 'index_popup');
 if (!defined('MYPLUGIN_PLUGIN_NAME')){
 	define('MYPLUGIN_PLUGIN_NAME', trim('Friendly Adblock'), '/');
 }
+
 function index_popup() {
 	global $wpdb;
 

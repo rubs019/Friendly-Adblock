@@ -17,4 +17,12 @@ include_once __DIR__ . '/../../../../../wp-includes/wp-db.php';
 global $wpdb;
 
 include_once('../model/db_update.php');
-update_table($wpdb, $_POST);
+$result = update_table($wpdb, $_POST);
+// wp_redirect(admin_url("index.php?page=".plugin_basename(__DIR__)));
+if ($result){
+	$name = plugin_basename(__DIR__);
+	$newvalue = str_replace("controller", "admin_panel.php", $name);
+	wp_redirect(admin_url("index.php?page=".$newvalue));
+} else {
+	echo "Error update SQL";
+}
