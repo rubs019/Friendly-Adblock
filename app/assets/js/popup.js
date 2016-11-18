@@ -7,6 +7,9 @@ jQuery(function($) {
 				$('#pop-close').click(function () {
 					$('#popup').animate({bottom: '-350px'}, 1500)
 				});
+				$(window).click(function(){
+					$('#popup').animate({bottom: '-350px'}, 1500)
+				});
 			}
 		}
 	}
