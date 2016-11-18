@@ -2,10 +2,11 @@
 /*
 Plugin Name: Friendly Adblock
 Description: Show personnal and cool advert to users using Adblock :) Enjoy !
-Version: 0.1.0
+Version: 0.1.2
 Author: Rubs019
 License: GPLv2 or later
 Text Domain: Friendly Adblock
+Author URI:  https://github.com/rubs019
 */
 
 add_action('admin_menu', 'add_Module_Panel_Admin');
@@ -24,15 +25,12 @@ function index_popup() {
 
 	$results = $wpdb->get_row("SELECT * FROM ".$prefix."plugins_fa LIMIT 0, 1");
 
-	$title = stripslashes_deep($results->fa_title);
-	$content = stripslashes_deep($results->fa_content);
-
 	if($results === null) {
-		echo "ERROR : Error select DB, please try to reactive your plugins [Issue 001]";
+		echo "ERROR : Try to configure your plugin in the dashboard [Issue 001]";
 		return false;
 	}
-	var_dump($results);
-
+	$title = stripslashes_deep($results->fa_title);
+	$content = stripslashes_deep($results->fa_content);
 	echo '<div id="popup" style="background-color: #'.$results->fa_bgcolor.';"><div id="pop-title"><span style="color:#'.$results->fa_color_title.'">'.$title.'</span></div><i id="pop-close" class="material-icons">close</i><div id="pop-content" style="color:#'.$results->fa_color_content.'">'.$content.'</div></div>';
 }
 
