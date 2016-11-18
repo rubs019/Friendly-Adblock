@@ -20,6 +20,7 @@ However you can :
 * Let Wordpress work (could take a few seconds)
 * If there isn't any problem you can click on "activate the extension"
 <br><br>
+
 ### <b>IMPORTANT :  Before launch the plugin, configure it in Dashboard -> Friendly Adblock in your admin panel</b>
 
 ### Can I help you ?
