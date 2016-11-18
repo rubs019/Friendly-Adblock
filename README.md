@@ -19,6 +19,8 @@ However you can :
 * Click on the up button "put an extension online" then browse and finnaly on install
 * Let Wordpress work (could take a few seconds)
 * If there isn't any problem you can click on "activate the extension"
+<br><br>
+* IMPORTANT :  Before launch the plugin, configure it in Dashboard -> Friendly Adblock in your admin panel
 
 ### Can I help you ?
 For sure :) <br>
