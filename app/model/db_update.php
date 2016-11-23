@@ -7,7 +7,6 @@
  */
 
 function update_table($wpdb, $param) {
-	var_dump($param);
 
 	$updated = $wpdb->update('wp_plugins_fa', array( 'fa_title' => $param['popup_title'],
 	                                                  'fa_content' => $param['content'],

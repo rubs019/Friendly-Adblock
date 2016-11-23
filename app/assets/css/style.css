@@ -49,3 +49,6 @@
 #popup #pop-content p {
 	font-size: 14px;
 }
+.js .tmce-active .wp-editor-area {
+	color: black !important;
+}

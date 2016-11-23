@@ -26,16 +26,16 @@ function index_popup() {
 	$results = $wpdb->get_row("SELECT * FROM ".$prefix."plugins_fa LIMIT 0, 1");
 
 	if($results === null) {
-		echo "ERROR : Try to configure your plugin in the dashboard [Issue 001]";
+		var_dump("ERROR : Try to configure your plugin in the dashboard [Issue 001]");
 		return false;
 	}
 	$title = stripslashes_deep($results->fa_title);
 	$content = stripslashes_deep($results->fa_content);
-	echo '<div id="popup" style="background-color: #'.$results->fa_bgcolor.';"><div id="pop-title"><span style="color:#'.$results->fa_color_title.'">'.$title.'</span></div><i id="pop-close" class="material-icons">close</i><div id="pop-content" style="color:#'.$results->fa_color_content.'">'.$content.'</div></div>';
+	echo '<div id="popup" class="front" style="background-color: #'.$results->fa_bgcolor.';"><div id="pop-title"><span style="color:#'.$results->fa_color_title.'">'.$title.'</span></div><i id="pop-close" class="material-icons">close</i><div id="pop-content" style="color:#'.$results->fa_color_content.'">'.$content.'</div></div>';
 }
 
 function script_load($hook) {
-	// Activation css/js sur page tableau-bord
+	// Activation css/js sur page tableau-bord et accueil
 	if ($hook === plugin_basename( __DIR__ ).'/app/admin_panel.php' or is_front_page()) {
 		// Css
 		wp_enqueue_style( 'style', esc_url( plugins_url( '/app/assets/css/style.css', __FILE__ ) ) );

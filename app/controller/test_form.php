@@ -18,7 +18,6 @@ global $wpdb;
 
 include_once('../model/db_update.php');
 $result = update_table($wpdb, $_POST);
-// wp_redirect(admin_url("index.php?page=".plugin_basename(__DIR__)));
 if ($result){
 	$name = plugin_basename(__DIR__);
 	$newvalue = str_replace("controller", "admin_panel.php", $name);
