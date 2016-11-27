@@ -5,7 +5,7 @@ Description: Show personnal and cool advert to users using Adblock :) Enjoy !
 Version: 0.1.2
 Author: Rubs019
 License: GPLv2 or later
-Text Domain: Friendly Adblock
+Text Domain: friendly_adblock
 Author URI:  https://github.com/rubs019
 */
 
@@ -13,12 +13,19 @@ add_action('admin_menu', 'add_Module_Panel_Admin');
 add_action('admin_enqueue_scripts', 'script_load');
 add_action( 'wp_enqueue_scripts', 'script_load' );
 add_action( 'wp_footer', 'index_popup');
+add_action('plugins_loaded', 'myplugin_init');
 
 if (!defined('MYPLUGIN_PLUGIN_NAME')){
 	define('MYPLUGIN_PLUGIN_NAME', trim('Friendly Adblock'), '/');
 }
 
+function myplugin_init() {
+	$plugin_dir = basename(dirname(__FILE__));
+	load_plugin_textdomain( 'friendly_adblock', false, $plugin_dir );
+}
+
 function index_popup() {
+	// This function show the popup on the INDEX PAGES
 	global $wpdb;
 
 	$prefix = $table_name = $wpdb->prefix;
