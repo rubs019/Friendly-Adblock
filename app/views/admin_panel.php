@@ -8,19 +8,19 @@
 			<form action="<?= plugins_url() ?>/<?= $path ?>/controller/test_form.php" method="post" id="config-popup">
 				<div class="choose-options">
 					<button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'} button button-small">
-						<?php _e('Background-color', 'friendly_adblock'); ?> :
+						<?php esc_html_e('Background-color', 'friendly_adblock'); ?> :
 					</button>
 					<span class="choose-color" id="bgcolor">Background-color:</span> <input name="bgcolor" id="chosen-value" value="<?= stripslashes_deep($request->fa_bgcolor); ?>">
 				</div>
 				<div class="choose-options">
 					<button class="jscolor {valueElement:'chosen-value1', onFineChange:'setTitleColor(this)'} button button-small">
-						<?php esc_html_e('Choose title color', 'Friendly Adblock'); ?> :
+						<?php esc_html_e('Choose title color', 'friendly_adblock'); ?> :
 					</button>
 					<span class="choose-color" id="titlecolor">Title-color:</span> <input name="titlecolor" id="chosen-value1" value="<?= stripslashes_deep($request->fa_color_title); ?>"">
 				</div>
 				<div class="choose-options">
 					<button class="jscolor {valueElement:'chosen-value2', onFineChange:'setTextColor(this)'} button button-small">
-						<?php esc_html_e('Choose text color', 'Friendly Adblock'); ?> :
+						<?php esc_html_e('Choose text color', 'friendly_adblock'); ?> :
 					</button>
 					<span class="choose-color" id="contentcolor">Text-color:</span> <input name="contentcolor" id="chosen-value2" value="<?= stripslashes_deep($request->fa_color_content); ?>">
 				</div>
