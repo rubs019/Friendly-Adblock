@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Friendly Adblock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-27 11:16+0000\n"
-"PO-Revision-Date: 2016-11-27 11:17+0000\n"
+"POT-Creation-Date: 2016-11-30 11:36+0000\n"
+"PO-Revision-Date: 2016-11-30 11:37+0000\n"
 "Last-Translator: rubs019 <ruben.desert@eemi.com>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -13,14 +13,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
+#: app/views/admin_panel.php:11
+msgid "Background-color"
+msgstr "Couleur fond"
+
+#: app/views/admin_panel.php:17
+msgid "Choose title color"
+msgstr "Couleur titre"
+
+#: app/views/admin_panel.php:23
+msgid "Choose text color"
+msgstr "Couleur texte"
+
 #. Name of the plugin
 msgid "Friendly Adblock"
-msgstr ""
-
-#. Description of the plugin
-msgid "Show personnal and cool advert to users using Adblock :) Enjoy !"
-msgstr ""
-"Affiche une fenêtre cool et personnalisable pour vos utilisateurs Adblock"
+msgstr "Friendly Adblock"
 
 #. Author of the plugin
 msgid "Rubs019"
@@ -29,3 +36,8 @@ msgstr ""
 #. Author URI of the plugin
 msgid "https://github.com/rubs019"
 msgstr ""
+
+#. Description of the plugin
+msgid "Show personnal and cool advert to users using Adblock :) Enjoy !"
+msgstr ""
+"Affiche une fenêtre cool et personnalisable pour vos utilisateurs Adblock"
